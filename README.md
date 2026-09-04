@@ -1,3 +1,5 @@
+# Credit-Card-Fraud-Detection
+
 A baseline fraud classifier on the ULB credit card dataset
 
 Accuracy is not a useful measure for this dataset since the fraud rate is so low to start, even if nothing is flagged as fraud by a model the accuracy is still high by the virtue of having large TN.
@@ -9,14 +11,16 @@ The dataset can be downloaded from Kaggle to the data/ directory:
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 
-To run:
+### To run:
 
 pip install -r requirements.txt
-python data/download.py
-python run.py.
 
-Status:
+python data/download.py
+
+python run.py
+
+### Status:
 - primary investigation done
-- next step: 
-    -- try multiple rounds of training on the data and observe what sort of degeneracy develops
-    -- simulate deliberately letting some fraudulent transactions through
+- next steps:
+    - try multiple rounds of training on the data and observe what sort of degeneracy develops
+    - simulate deliberately letting some fraudulent transactions through
